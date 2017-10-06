@@ -1,0 +1,44 @@
+{
+  "name": "json2html",
+  "version": "0.0.0",
+  "description": "Transforms a JSON object to a pretty piece of HTML Edit",
+  "engineStrict": true,
+  "engines": {
+    "node": ">= 6.9.0"
+  },
+  "devDependencies": {
+    "@types/jest": "~21.1.1",
+    "@types/node": "~6.0.88",
+    "bluebird": "^3.5.1",
+    "jest": "~21.2.0",
+    "rimraf": "~2.6.2",
+    "tslint": "~5.7.0",
+    "tslint-microsoft-contrib": "~5.0.1",
+    "tsutils": "~2.9.0",
+    "typescript": "~2.5.3"
+  },
+  "scripts": {
+    "clean": "rimraf coverage build tmp",
+    "build": "tsc -p tsconfig.release.json",
+    "watch": "tsc -w -p tsconfig.release.json",
+    "lint": "tslint -t stylish --type-check --project \"tsconfig.json\"",
+    "pretest": "npm run lint",
+    "test": "npm run test-only",
+    "test-only": "jest --coverage",
+    "test:watch": "jest --watch"
+  },
+  "author": "Antoime Melki <adonf156@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/amelki/json2html.git"
+  },
+  "bugs": {
+    "url": "https://github.com/amelki/json2html/issues"
+  },
+  "homepage": "https://github.com/amelki/json2html#readme",
+  "dependencies": {
+    "@types/bluebird": "^3.5.14",
+    "tslib": "~1.7.1"
+  }
+}
