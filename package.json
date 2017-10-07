@@ -1,5 +1,5 @@
 {
-  "name": "json2html",
+  "name": "json-pretty-html",
   "version": "0.0.0",
   "description": "Transforms a JSON object to a pretty piece of HTML Edit",
   "engineStrict": true,
