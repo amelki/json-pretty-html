@@ -2,11 +2,7 @@
 [![Node.js version][nodejs-badge]][nodejs]
 [![NPM version][npm-badge]][npm]
 [![Build Status][travis-badge]][travis-ci]
-
 [![MIT][license-badge]][LICENSE]
-
-[![Watch on GitHub][github-watch-badge]][github-watch]
-[![Star on GitHub][github-star-badge]][github-star]
 
 # json-pretty-html
 
@@ -34,7 +30,8 @@ var prettyHtml = require('json-pretty-html');
 var html = prettyHtml(json, json.dimensions);
 ```
 
-With a nice CSS, the result will be:
+With [a nice CSS](https://github.com/amelki/json-pretty-html/blob/master/examples/styles.css), the result will be:
+
 
 <img src="https://cdn.pbrd.co/images/GNTkTu9.png" alt="Result" width="350">
 
