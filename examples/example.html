@@ -1,0 +1,67 @@
+<html>
+<head>
+<script src="../dist/bundle.js"></script>
+</head>
+<body>
+<style>
+    body {
+        font-family: Menlo, Monaco, "Courier New", monospace;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0;
+        background-color: #24282A;
+        color: #d4d4d4;
+        text-align: left;
+        border-top: 1px solid #121516;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin: 0;
+    }
+
+    .json-string {
+        color: #6caedd;
+    }
+
+    .json-key {
+        color: #ec5f67;
+    }
+
+    .json-boolean {
+        color: #99c794;
+    }
+
+    .json-number {
+        color: #99c794;
+    }
+
+    .json-pretty {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .json-selected {
+        background-color: rgba(139, 191, 228, 0.19999999999999996);
+    }
+</style>
+<script>
+	var json = {
+		"id": 2,
+		"name": "An ice sculpture",
+		"price": 12.50,
+		"tags": ["cold", "ice"],
+		"dimensions": {
+			"length": 7.0,
+			"width": 12.0,
+			"height": 9.5
+		},
+		"warehouseLocation": {
+			"latitude": -78.75,
+			"longitude": 20.4
+		}
+	};
+    var html = prettyPrint.default(json, json.dimensions);
+    document.write(html);
+</script>
+</body>
+</html>

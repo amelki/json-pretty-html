@@ -12,11 +12,30 @@
 
 Transforms a JSON object into an HTML string. Allows selecting a subset of the object and highlight it with a CSS class.
 
-## Install
+## Usage
 
-```sh
-npm install json-pretty-html --save
+```js
+var json = {
+  "id": 2,
+  "name": "An ice sculpture",
+  "price": 12.50,
+  "tags": ["cold", "ice"],
+  "dimensions": {
+    "length": 7.0,
+    "width": 12.0,
+    "height": 9.5
+  },
+  "warehouseLocation": {
+    "latitude": -78.75,
+    "longitude": 20.4
+  }
+};
+var prettyHtml = require('json-pretty-html');
+var html = prettyHtml(json, json.dimensions);
 ```
+
+![Here is the result](https://cdn.pbrd.co/images/GNTkTu9.png)
+
 
 [dependencies-badge]: https://david-dm.org/amelki/json-pretty-html/dev-status.svg
 [dependencies]: https://david-dm.org/amelki/json-pretty-html?type=dev
