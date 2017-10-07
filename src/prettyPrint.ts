@@ -177,9 +177,7 @@ export interface Options {
 }
 
 const prettyPrint = (object: object, selection?: object, options?: Options): string => {
-  const opts = Object.assign({
-    indent: '&nbsp;&nbsp;'
-  }, options);
+  const opts = Object.assign({ indent: '&nbsp;&nbsp;' }, options);
   const out = new PrintWriter(opts.indent);
   out.print(`<div class="json-pretty">`);
   if (Array.isArray(object)) {

@@ -34,7 +34,9 @@ var prettyHtml = require('json-pretty-html');
 var html = prettyHtml(json, json.dimensions);
 ```
 
-<img src="https://cdn.pbrd.co/images/GNTkTu9.png" alt="Result" width="600">
+With a nice CSS, the result will be:
+
+<img src="https://cdn.pbrd.co/images/GNTkTu9.png" alt="Result" width="350">
 
 
 [dependencies-badge]: https://david-dm.org/amelki/json-pretty-html/dev-status.svg

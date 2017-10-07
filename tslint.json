@@ -16,6 +16,7 @@
     "newline-before-return": false, // disable MS rule
     "no-eval": false, // disable MS rule
     "ordered-imports": false, // disable MS rule
+    "interface-name": false, // disable MS rule
     "mocha-no-side-effect-code": false,
     "missing-jsdoc": false,
     "no-relative-imports": false,
