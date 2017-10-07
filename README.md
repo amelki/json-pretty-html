@@ -3,13 +3,10 @@
 [![NPM version][npm-badge]][npm]
 [![Build Status][travis-badge]][travis-ci]
 
-[![APLv2][license-badge]][LICENSE]
-[![PRs Welcome][prs-badge]][prs]
-[![Donate][donate-badge]][donate]
+[![MIT][license-badge]][LICENSE]
 
 [![Watch on GitHub][github-watch-badge]][github-watch]
 [![Star on GitHub][github-star-badge]][github-star]
-[![Tweet][twitter-badge]][twitter]
 
 # json2html
 
