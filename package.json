@@ -31,12 +31,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/amelki/json2html.git"
+    "url": "https://github.com/amelki/json-pretty-html.git"
   },
   "bugs": {
-    "url": "https://github.com/amelki/json2html/issues"
+    "url": "https://github.com/amelki/json-pretty-html/issues"
   },
-  "homepage": "https://github.com/amelki/json2html#readme",
+  "homepage": "https://github.com/amelki/json-pretty-html#readme",
   "dependencies": {
     "@types/bluebird": "^3.5.14",
     "tslib": "~1.7.1"
