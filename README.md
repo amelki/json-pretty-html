@@ -35,6 +35,17 @@ With [a nice CSS](https://github.com/amelki/json-pretty-html/blob/master/example
 
 <img src="https://cdn.pbrd.co/images/GNTkTu9.png" alt="Result" width="350">
 
+## CSS classes
+
+*CSS Class* | *Purpose*
+--- | ---
+json-pretty | A div grouping several lines, delimited by the start/end of the object or the start/end of the selection
+json-selected | The current selection div, if any
+json-key | Object key
+json-string | String value
+json-number | Number value
+json-boolean | Boolean value
+
 
 [dependencies-badge]: https://david-dm.org/amelki/json-pretty-html/dev-status.svg
 [dependencies]: https://david-dm.org/amelki/json-pretty-html?type=dev

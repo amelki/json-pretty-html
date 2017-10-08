@@ -33,6 +33,12 @@
   },
   "author": "Antoime Melki <adonf156@gmail.com>",
   "license": "MIT",
+  "keywords": [
+    "json",
+    "pretty",
+    "print",
+    "html"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/amelki/json-pretty-html.git"
