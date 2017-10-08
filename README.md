@@ -37,9 +37,9 @@ With [a nice CSS](https://github.com/amelki/json-pretty-html/blob/master/style.c
 
 ## CSS
 
-We provide a ['darcula' like stylesheet](https://github.com/amelki/json-pretty-html/blob/master/style.css) that you can use at your convenience.
+We provide a ['darcula' like stylesheet](https://github.com/amelki/json-pretty-html/blob/master/style.css) that you can use.
 
-You can also define your own styles for each CSS class we use in the generated HTML:
+You can also define your own styles for each CSS class used in the generated HTML:
 
 *CSS Class*   | *Purpose*
 --- | ---
