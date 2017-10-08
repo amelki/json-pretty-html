@@ -29,19 +29,19 @@ test('undefinedOrNull', () => {
 });
 
 test('simple', () => {
-  let object = { foo: { bar: 'hux' } };
+  const object = { foo: { bar: 'hux' } };
   expect(prettyPrint(object)).toBe('<div class="json-pretty">{<br>&nbsp;&nbsp;"<span class="json-key">foo</span>":&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;"<span class="json-key">bar</span>":&nbsp;"<span class="json-string">hux</span>"<br>&nbsp;&nbsp;}<br>}</div>');
   expect(prettyPrint(object, object.foo)).toBe('<div class="json-pretty">{<br></div><div class="json-pretty json-selected">&nbsp;&nbsp;"<span class="json-key">foo</span>":&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;"<span class="json-key">bar</span>":&nbsp;"<span class="json-string">hux</span>"<br>&nbsp;&nbsp;}</div><div class="json-pretty">}</div>');
   expect(prettyPrint(object, object)).toBe('<div class="json-pretty json-selected">{<br>&nbsp;&nbsp;"<span class="json-key">foo</span>":&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;"<span class="json-key">bar</span>":&nbsp;"<span class="json-string">hux</span>"<br>&nbsp;&nbsp;}<br>}</div>');
 });
 
 test('array', () => {
-  let json = [ 'foo', 'bar' ];
+  const json = [ 'foo', 'bar' ];
   expect(prettyPrint(json)).toBe('<div class="json-pretty">[<br>&nbsp;&nbsp;"<span class="json-string">foo</span>",<br>&nbsp;&nbsp;"<span class="json-string">bar</span>"<br>]</div>');
 });
 
 test('arrayWithObject', () => {
-  let json = [ 'foo', { bar : 'hux' } ];
+  const json = [ 'foo', { bar : 'hux' } ];
   expect(prettyPrint(json)).toBe('<div class="json-pretty">[<br>&nbsp;&nbsp;"<span class="json-string">foo</span>",<br>&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;"<span class="json-key">bar</span>":&nbsp;"<span class="json-string">hux</span>"<br>&nbsp;&nbsp;}<br>]</div>');
   expect(prettyPrint(json, <object>json[1])).toBe('<div class="json-pretty">[<br>&nbsp;&nbsp;"<span class="json-string">foo</span>",<br></div><div class="json-pretty json-selected">&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;"<span class="json-key">bar</span>":&nbsp;"<span class="json-string">hux</span>"<br>&nbsp;&nbsp;}</div><div class="json-pretty">]</div>');
 });

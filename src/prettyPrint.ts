@@ -177,7 +177,7 @@ export interface Options {
 }
 
 const prettyPrint = (object: object, selection?: object, options?: Options): string => {
-  if (object) {
+  if (typeof object !== undefined && object != null) {
     const opts = Object.assign({indent: '&nbsp;&nbsp;'}, options);
     const out = new PrintWriter(opts.indent);
     if (object === selection) {
