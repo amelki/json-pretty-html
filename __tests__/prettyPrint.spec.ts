@@ -50,3 +50,10 @@ test('options', () => {
   expect(prettyPrint({ foo: 'bar' }, null, { indent: '  ' })).toBe('<div class="json-pretty">{<br>  "<span class="json-key">foo</span>":&nbsp;"<span class="json-string">bar</span>"<br>}</div>');
   expect(prettyPrint({ foo: 'bar' }, null, { indent: '&nbsp;&nbsp;&nbsp;&nbsp;' })).toBe('<div class="json-pretty">{<br>&nbsp;&nbsp;&nbsp;&nbsp;"<span class="json-key">foo</span>":&nbsp;"<span class="json-string">bar</span>"<br>}</div>');
 });
+
+test('circular', () => {
+  const object = { foo: { bar: 'hux' }, hux: null };
+  object.hux = object;
+  expect(() => prettyPrint(object)).toThrow('Cannot pretty print object with circular reference');
+});
+

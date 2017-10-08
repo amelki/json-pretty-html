@@ -5,10 +5,22 @@ class PrintWriter {
   private buffer: string[];
   private _printSelectionEndAtNewLine: boolean;
   private indentString: string;
+  private objects: object[];
 
   constructor(indentString: string) {
     this.buffer = [];
     this.indentString = indentString;
+    this.objects = [];
+  }
+
+  public checkCircular(object: object) {
+    for (let i = 0; i < this.objects.length; i++) {
+      const obj = this.objects[i];
+      if (object == obj) {
+        throw new Error('Cannot pretty print object with circular reference');
+      }
+    }
+    this.objects.push(object);
   }
 
   public print(str: string) {
@@ -78,6 +90,7 @@ class PrintWriter {
 }
 
 const printObject = (object: object, out: PrintWriter, idt: number, selection: object, options: Options): void => {
+  out.checkCircular(object);
   out.print('{');
   out.newLine();
   const keys = Object.keys(object);
@@ -129,6 +142,7 @@ const printObject = (object: object, out: PrintWriter, idt: number, selection: o
 };
 
 const printArray = (array: {}[], out: PrintWriter, idt: number, selection: object, options: Options): void => {
+  out.checkCircular(array);
   out.print('[');
   out.newLine();
   for (let i = 0; i < array.length; i++) {
