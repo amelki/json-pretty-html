@@ -37,6 +37,7 @@ With [a nice CSS](https://github.com/amelki/json-pretty-html/blob/master/example
 
 ## CSS classes
 
+--- | ---
 json-pretty | A div grouping several lines, delimited by the start/end of the object or the start/end of the selection
 json-selected | The current selection div, if any
 json-key | Object key
