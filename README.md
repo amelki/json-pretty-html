@@ -30,7 +30,7 @@ var prettyHtml = require('json-pretty-html');
 var html = prettyHtml(json, json.dimensions);
 ```
 
-With [a nice CSS](https://github.com/amelki/json-pretty-html/blob/master/examples/styles.css), the result will be:
+With [a nice CSS](https://github.com/amelki/json-pretty-html/blob/master/style.css), the result will be:
 
 
 <img src="https://cdn.pbrd.co/images/GNTkTu9.png" alt="Result" width="350">

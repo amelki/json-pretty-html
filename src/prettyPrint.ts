@@ -173,7 +173,8 @@ const printArray = (array: {}[], out: PrintWriter, idt: number, selection: objec
 };
 
 export interface Options {
-  indent: string;
+  indent?: string;
+
 }
 
 const prettyPrint = (object: object, selection?: object, options?: Options): string => {

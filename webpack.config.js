@@ -11,6 +11,14 @@ module.exports = {
       {
         test: /\.js$/,
         loader: 'babel-loader?presets[]=es2015'
+      },
+      {
+        test: /\.scss$/,
+        loaders: ["style", "css", "sass"]
+      },
+      {
+        test: /\.css$/,
+        loaders: ["style", "css"]
       }
     ]
   }
