@@ -1,4 +1,4 @@
-require('./style.css');
+require('json-pretty-html/style.css');
 var jsonPrettyHtml = require("json-pretty-html");
 var json = {
   "id": 2,

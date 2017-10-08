@@ -52,5 +52,5 @@
     "@types/bluebird": "^3.5.14",
     "tslib": "~1.7.1"
   },
-  "tonicExampleFilename": "example.js"
+  "tonicExampleFilename": "tonicExample.js"
 }
