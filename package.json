@@ -39,6 +39,7 @@
     "print",
     "html"
   ],
+  "main": "src/prettyPrint.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/amelki/json-pretty-html.git"
