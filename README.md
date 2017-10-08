@@ -40,7 +40,7 @@ With [a nice CSS](https://github.com/amelki/json-pretty-html/blob/master/example
 *CSS Class* | *Purpose*
 --- | ---
 json-pretty | A div grouping several lines, delimited by the start/end of the object or the start/end of the selection
-json-selected | The current selection div, if any
+json-selected | The current selection div, if any. Always associated with the json-pretty class.
 json-key | Object key, excluding double quotes
 json-string | String value, excluding double quotes
 json-number | Number value
