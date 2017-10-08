@@ -14,8 +14,8 @@ class PrintWriter {
   }
 
   public checkCircular(object: object) {
-    for (let obj of this.objects) {
-      if (object == obj) {
+    for (const obj of this.objects) {
+      if (object === obj) {
         throw new Error('Cannot pretty print object with circular reference');
       }
     }

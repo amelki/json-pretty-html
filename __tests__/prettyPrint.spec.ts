@@ -56,4 +56,3 @@ test('circular', () => {
   object.hux = object;
   expect(() => prettyPrint(object)).toThrow('Cannot pretty print object with circular reference');
 });
-
