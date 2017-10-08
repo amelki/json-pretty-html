@@ -39,12 +39,12 @@ With [a nice CSS](https://github.com/amelki/json-pretty-html/blob/master/style.c
 
 *CSS Class* | *Purpose*
 --- | ---
-json-pretty | A div grouping several lines, delimited by the start/end of the object or the start/end of the selection
-json-selected | The current selection div, if any. Always associated with the json-pretty class.
-json-key | Object key, excluding double quotes
-json-string | String value, excluding double quotes
-json-number | Number value
-json-boolean | Boolean value
+<nobr>json-pretty</nobr> | A div grouping several lines, delimited by the start/end of the object or the start/end of the selection
+<nobr>json-selected</nobr> | The current selection div, if any. Always associated with the json-pretty class.
+<nobr>json-key</nobr> | Object key, excluding double quotes
+<nobr>json-string</nobr> | String value, excluding double quotes
+<nobr>json-number</nobr> | Number value
+<nobr>json-boolean</nobr> | Boolean value
 
 
 [dependencies-badge]: https://david-dm.org/amelki/json-pretty-html/dev-status.svg
