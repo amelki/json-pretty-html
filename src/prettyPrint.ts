@@ -177,16 +177,23 @@ export interface Options {
 }
 
 const prettyPrint = (object: object, selection?: object, options?: Options): string => {
-  const opts = Object.assign({ indent: '&nbsp;&nbsp;' }, options);
-  const out = new PrintWriter(opts.indent);
-  out.print(`<div class="json-pretty">`);
-  if (Array.isArray(object)) {
-    printArray(object, out, 0, selection, opts);
-  } else {
-    printObject(object, out, 0, selection, opts);
+  if (object) {
+    const opts = Object.assign({indent: '&nbsp;&nbsp;'}, options);
+    const out = new PrintWriter(opts.indent);
+    if (object === selection) {
+      out.print(`<div class="json-pretty json-selected">`);
+    } else {
+      out.print(`<div class="json-pretty">`);
+    }
+    if (Array.isArray(object)) {
+      printArray(object, out, 0, selection, opts);
+    } else {
+      printObject(object, out, 0, selection, opts);
+    }
+    out.print(`</div>`);
+    return out.toString();
   }
-  out.print(`</div>`);
-  return out.toString();
+  return '';
 };
 
 export default prettyPrint;
