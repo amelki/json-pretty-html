@@ -37,7 +37,7 @@ With [a nice CSS](https://github.com/amelki/json-pretty-html/blob/master/style.c
 
 ## CSS classes
 
-*CSS Class* | *Purpose*
+*CSS Class*   | *Purpose*
 --- | ---
 <nobr>json-pretty</nobr> | A div grouping several lines, delimited by the start/end of the object or the start/end of the selection
 <nobr>json-selected</nobr> | The current selection div, if any. Always associated with the json-pretty class.
