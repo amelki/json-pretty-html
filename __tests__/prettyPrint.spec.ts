@@ -56,3 +56,8 @@ test('circular', () => {
   object.hux = object;
   expect(() => prettyPrint(object)).toThrow('Cannot pretty print object with circular reference');
 });
+
+test('escapedHtml', () => {
+  const json = { foo: 'hello <span> world', 'the<key>': 'other', bar: 'with "double" quotes' };
+  expect(prettyPrint(json)).toBe('<div class="json-pretty">{<br>&nbsp;&nbsp;"<span class="json-key">foo</span>":&nbsp;"<span class="json-string">hello &lt;span&gt; world</span>",<br>&nbsp;&nbsp;"<span class="json-key">the&lt;key&gt;</span>":&nbsp;"<span class="json-string">other</span>",<br>&nbsp;&nbsp;"<span class="json-key">bar</span>":&nbsp;"<span class="json-string">with &quot;double&quot; quotes</span>"<br>}</div>');
+});

@@ -1,3 +1,45 @@
+const matchHtmlRegExp = /["'&<>]/;
+
+const escapeHtml = (str: string) : string => {
+  const match = matchHtmlRegExp.exec(str);
+  if (match !== null) {
+    let escape;
+    let html = '';
+    let index: number;
+    let lastIndex = 0;
+    for (index = match.index; index < str.length; index++) {
+      switch (str.charCodeAt(index)) {
+        case 34: // "
+          escape = '&quot;';
+          break;
+        case 38: // &
+          escape = '&amp;';
+          break;
+        case 39: // '
+          escape = '&#39;';
+          break;
+        case 60: // <
+          escape = '&lt;';
+          break;
+        case 62: // >
+          escape = '&gt;';
+          break;
+        default:
+          continue;
+      }
+      if (lastIndex !== index) {
+        html += str.substring(lastIndex, index);
+      }
+      lastIndex = index + 1;
+      html += escape;
+    }
+    return lastIndex !== index
+      ? html + str.substring(lastIndex, index)
+      : html;
+  }
+  return str;
+};
+
 /**
  * A utility class for printing json artifacts
  */
@@ -51,13 +93,13 @@ class PrintWriter {
 
   public printKey(key: string) {
     this.buffer.push('\"');
-    this.buffer.push(`<span class="json-key">${key}</span>`);
+    this.buffer.push(`<span class="json-key">${escapeHtml(key)}</span>`);
     this.buffer.push('\"');
   }
 
   public printString(value: string) {
     this.buffer.push('\"');
-    this.buffer.push(`<span class="json-string">${value}</span>`);
+    this.buffer.push(`<span class="json-string">${escapeHtml(value)}</span>`);
     this.buffer.push('\"');
   }
 
