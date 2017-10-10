@@ -1,8 +1,7 @@
-[![Dev dependencies][dependencies-badge]][dependencies]
-[![Node.js version][nodejs-badge]][nodejs]
-[![NPM version][npm-badge]][npm]
 [![Build Status][travis-badge]][travis-ci]
+[![Dev dependencies][dependencies-badge]][dependencies]
 [![MIT][license-badge]][LICENSE]
+[![Node.js version][nodejs-badge]][nodejs]
 
 # json-pretty-html
 
