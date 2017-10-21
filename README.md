@@ -1,5 +1,5 @@
 [![Build Status][travis-badge]][travis-ci]
-[![Dev dependencies][dependencies-badge]][dependencies]
+[![Dependencies][dependencies-badge]][dependencies]
 [![NPM Downloads][downloads-image]][downloads-url]
 [![MIT][license-badge]][LICENSE]
 [![Node.js version][nodejs-badge]][nodejs]
@@ -53,8 +53,10 @@ Or you can define your own styles. See below the list of CSS classes used in the
 
 [downloads-image]: https://img.shields.io/npm/dm/json-pretty-html.svg
 [downloads-url]: https://npmjs.org/package/json-pretty-html
-[dependencies-badge]: https://david-dm.org/amelki/json-pretty-html/dev-status.svg
-[dependencies]: https://david-dm.org/amelki/json-pretty-html?type=dev
+[dependencies-badge]: https://david-dm.org/amelki/json-pretty-html/status.svg
+[dependencies]: https://david-dm.org/amelki/json-pretty-html
+[dev-dependencies-badge]: https://david-dm.org/amelki/json-pretty-html/dev-status.svg
+[dev-dependencies]: https://david-dm.org/amelki/json-pretty-html?type=dev
 [nodejs-badge]: https://img.shields.io/badge/node->=%206.9-blue.svg
 [nodejs]: https://nodejs.org/dist/latest-v6.x/docs/api/
 [npm-badge]: https://img.shields.io/badge/npm->=%203.10.8-blue.svg

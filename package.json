@@ -6,9 +6,17 @@
   "engines": {
     "node": ">= 6.9.0"
   },
+  "dependencies": {
+    "@types/node": "8.0.46",
+    "@types/bluebird": "^3.5.14",
+    "bluebird": "^3.5.1",
+    "escape-html": "^1.0.3",
+    "tsutils": "~2.12.0",
+    "tslib": "~1.8.0"
+  },
   "devDependencies": {
     "@types/jest": "~21.1.1",
-    "@types/node": "8.0.32",
+    "@types/node": "8.0.46",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
     "babel-preset-es2015": "^6.24.1",
@@ -16,7 +24,7 @@
     "escape-html": "^1.0.3",
     "jest": "~21.2.0",
     "rimraf": "~2.6.2",
-    "tslint": "~5.7.0",
+    "tslint": "~5.8.0",
     "tslint-microsoft-contrib": "~5.0.1",
     "tsutils": "~2.12.0",
     "typescript": "~2.5.3",
@@ -49,9 +57,5 @@
     "url": "https://github.com/amelki/json-pretty-html/issues"
   },
   "homepage": "https://github.com/amelki/json-pretty-html#readme",
-  "dependencies": {
-    "@types/bluebird": "^3.5.14",
-    "tslib": "~1.7.1"
-  },
   "tonicExampleFilename": "tonicExample.js"
 }
