@@ -6,22 +6,15 @@
   "engines": {
     "node": ">= 6.9.0"
   },
-  "dependencies": {
-    "@types/node": "8.0.46",
-    "@types/bluebird": "^3.5.14",
-    "bluebird": "^3.5.1",
-    "escape-html": "^1.0.3",
-    "tsutils": "~2.12.0",
-    "tslib": "~1.8.0"
-  },
+  "dependencies": {},
   "devDependencies": {
+    "@types/bluebird": "^3.5.14",
     "@types/jest": "~21.1.1",
     "@types/node": "8.0.46",
+    "bluebird": "^3.5.1",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
     "babel-preset-es2015": "^6.24.1",
-    "bluebird": "^3.5.1",
-    "escape-html": "^1.0.3",
     "jest": "~21.2.0",
     "rimraf": "~2.6.2",
     "tslint": "~5.8.0",
@@ -48,7 +41,7 @@
     "print",
     "html"
   ],
-  "main": "src/prettyPrint.js",
+  "main": "dist/bundle.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/amelki/json-pretty-html.git"
