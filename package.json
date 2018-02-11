@@ -1,6 +1,6 @@
 {
   "name": "json-pretty-html",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Transforms a JSON object to a pretty piece of HTML Edit",
   "engineStrict": true,
   "engines": {
