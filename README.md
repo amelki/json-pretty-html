@@ -26,7 +26,7 @@ var json = {
     "longitude": 20.4
   }
 };
-var prettyHtml = require('json-pretty-html');
+var prettyHtml = require('json-pretty-html').default;
 var html = prettyHtml(json, json.dimensions);
 ```
 
