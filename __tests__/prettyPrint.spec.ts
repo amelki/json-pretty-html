@@ -15,7 +15,8 @@ const testPrettyPrint = (jsonFile: string, expected: string, selection: string) 
           '.json-string{ color: green } .json-boolean{ color: blue } ' +
           '.json-selected { background-color: #ddd }</style>';
         const all = `${styles} <br> ${html}`;
-        expect(all).toBe(results[1].toString());
+        var expectedTrimmed = results[1]..toString().replace(/^\s+|\s+$/g, '');
+        expect(all).toBe(expectedTrimmed);
       });
   });
 };
