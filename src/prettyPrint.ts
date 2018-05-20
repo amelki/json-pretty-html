@@ -92,15 +92,11 @@ class PrintWriter {
   }
 
   public printKey(key: string) {
-    this.buffer.push('\"');
-    this.buffer.push(`<span class="json-key">${escapeHtml(key)}</span>`);
-    this.buffer.push('\"');
+    this.buffer.push(`<span class="json-key">\"${escapeHtml(key)}\"</span>`);
   }
 
   public printString(value: string) {
-    this.buffer.push('\"');
-    this.buffer.push(`<span class="json-string">${escapeHtml(value)}</span>`);
-    this.buffer.push('\"');
+    this.buffer.push(`<span class="json-string">\"${escapeHtml(value)}\"</span>`);
   }
 
   public printBoolean(value: boolean) {
