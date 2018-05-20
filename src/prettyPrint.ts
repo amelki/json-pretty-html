@@ -92,11 +92,11 @@ class PrintWriter {
   }
 
   public printKey(key: string) {
-    this.buffer.push(`<span class="json-key">\"${escapeHtml(key)}\"</span>`);
+    this.buffer.push(`<span class="json-key">&quot;${escapeHtml(key)}&quot;</span>`);
   }
 
   public printString(value: string) {
-    this.buffer.push(`<span class="json-string">\"${escapeHtml(value)}\"</span>`);
+    this.buffer.push(`<span class="json-string">&quot;${escapeHtml(value)}&quot;</span>`);
   }
 
   public printBoolean(value: boolean) {
