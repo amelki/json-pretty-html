@@ -205,6 +205,8 @@ const printArray = (array: {}[], out: PrintWriter, idt: number, selection: objec
       case 'object':
         if (value == null) {
           out.print('null');
+        } else if (Array.isArray(value)) {
+          printArray(value, out, idt + 1, selection, options);
         } else {
           printObject(<object>value, out, idt + 1, selection, options);
         }
