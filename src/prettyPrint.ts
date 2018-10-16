@@ -53,6 +53,7 @@ class PrintWriter {
     this.buffer = [];
     this.indentString = indentString;
     this.objects = [];
+    this._printSelectionEndAtNewLine = false;
   }
 
   public checkCircular(object: object) {
@@ -130,7 +131,7 @@ class PrintWriter {
   }
 }
 
-const printObject = (object: object, out: PrintWriter, idt: number, selection: object, options: Options): void => {
+const printObject = (object: object, out: PrintWriter, idt: number, selection: object | null, options: Options): void => {
   out.checkCircular(object);
   out.print('{');
   out.newLine();
@@ -182,7 +183,7 @@ const printObject = (object: object, out: PrintWriter, idt: number, selection: o
   }
 };
 
-const printArray = (array: {}[], out: PrintWriter, idt: number, selection: object, options: Options): void => {
+const printArray = (array: {}[], out: PrintWriter, idt: number, selection: object | null, options: Options): void => {
   out.checkCircular(array);
   out.print('[');
   out.newLine();
