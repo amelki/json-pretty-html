@@ -5,6 +5,7 @@
     "rootDir": ".",
     "outDir": "build",
     "removeComments": true,
+    "sourceMap": true,
     "jsx": "react"
   },
   "include": [
