@@ -8,6 +8,8 @@
     "tslint-microsoft-contrib"
   ],
   "rules": {
+    "no-string-literal": false,
+    "no-unnecessary-type-assertion": false,
     "no-increment-decrement": false, // disable MS rule
     "no-use-before-declare": false, // disable MS rule
     "no-default-export": false, // disable MS rule

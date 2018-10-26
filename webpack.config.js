@@ -7,10 +7,10 @@ module.exports = {
     library: 'prettyPrint'
   },
   module: {
-    loaders: [
+    rules: [
       {
-        test: /\.js$/,
-        loader: 'babel-loader?presets[]=es2015'
+        test: /\.tsx?$/,
+        loader: 'awesome-typescript-loader'
       },
       {
         test: /\.scss$/,
@@ -21,5 +21,19 @@ module.exports = {
         loaders: ["style", "css"]
       }
     ]
+
+/*
+    loaders: [
+      { test: /\.(t|j)sx?$/, use: { loader: 'awesome-typescript-loader' } },
+      {
+        test: /\.scss$/,
+        loaders: ["style", "css", "sass"]
+      },
+      {
+        test: /\.css$/,
+        loaders: ["style", "css"]
+      }
+    ]
+*/
   }
 };

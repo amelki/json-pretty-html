@@ -1,8 +1,6 @@
 import prettyPrint from '../src/prettyPrint';
 import * as fs from 'fs';
 import * as Promise from 'bluebird';
-//const Promise = require("bluebird");
-
 const readFile = Promise.promisify(fs.readFile);
 
 const testPrettyPrint = (jsonFile: string, expected: string, selection: string) => {
