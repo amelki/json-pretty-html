@@ -35,6 +35,18 @@ With [a nice CSS](https://github.com/amelki/json-pretty-html/blob/master/style.c
 
 <img src="https://cdn.pbrd.co/images/GNTkTu9.png" alt="Result" width="350">
 
+## Options
+
+* indent: String to indent with. Defaults to 2 html spaces.
+* silent: Suppresses exceptions for unknown types. For instance function. Defaults to false. When set to true the type will be outputted instead.
+
+```js
+var html = prettyHtml(json, json.dimensions, {
+  indent: '&nbsp;&nbsp;',
+  silent: false
+});
+```
+
 ## CSS
 
 You can use the default ['darcula' like stylesheet](https://github.com/amelki/json-pretty-html/blob/master/style.css).

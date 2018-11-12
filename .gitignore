@@ -9,3 +9,10 @@ lib
 lib-esm
 stats
 _bundles
+__tests__/*.d.ts
+__tests__/*.js
+__tests__/*.js.map
+src/*.d.ts
+src/*.js
+src/*.js.map
+build
