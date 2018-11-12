@@ -218,7 +218,11 @@ const printArray = (array: {}[], out: PrintWriter, idt: number, selection: objec
         out.print('undefined');
         break;
       default:
-        throw new Error(`Don''t know what to do with ${typeof value}`);
+        if (options.silent) {
+          out.print(typeof value);
+        } else {
+          throw new Error(`Don''t know what to do with ${typeof value}`);
+        }
     }
     if (i < array.length - 1) {
       out.print(',');
