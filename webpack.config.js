@@ -4,7 +4,8 @@ module.exports = {
     path: __dirname + '/dist',
     filename: 'bundle.js',
     libraryTarget: 'umd',
-    library: 'prettyPrint'
+    library: 'prettyPrint',
+    globalObject: 'typeof self !== \'undefined\' ? self : this',
   },
   module: {
     rules: [
